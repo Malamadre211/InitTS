@@ -1,25 +1,18 @@
 "use strict";
-function getAllDiceCombinations(dices) {
-    const toCombine = new Array(dices.length).fill("").map((_, i) => i);
-    let combinations = [];
-    let temp = [];
-    let slent = Math.pow(2, toCombine.length) - 1;
-    for (let i = 0; i < slent; i++) {
-        temp = [];
-        for (var j = 0; j < toCombine.length; j++) {
-            if (i & Math.pow(2, j)) {
-                temp.push(toCombine[j]);
-            }
-        }
-        if (temp.length > 0) {
-            combinations.push(temp);
-        }
-    }
-    return combinations.map((combi) => {
-        const completion = toCombine.filter((index) => combi.indexOf(index) === -1);
-        const diceCombi = combi.map((e) => dices[e]);
-        const diceCompletion = completion.map((e) => dices[e]);
-        return [diceCombi, diceCompletion];
-    });
+// Exercice 1 - Les variables
+const a = 5;
+const b = 1;
+if (a > Math.PI) {
+    console.log('a est supérieur à PI');
 }
-console.log('test fonction', getAllDiceCombinations(["vert", "rouge", "jaune"]));
+else {
+    console.log('a est inférieur à PI');
+}
+if (b > Math.PI) {
+    console.log('b est supérieur à PI');
+}
+else {
+    console.log('b est inférieur à PI');
+}
+const msg = a > b ? 'a est plus grand que b' : 'b est plus grand que a';
+console.log(msg);
