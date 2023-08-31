@@ -20,8 +20,8 @@ const decouverte_typescript_exe2 = () => {
     let tab2 = [];
     for (let index = 0; index < tab.length; index++) {
         const element = tab[index];
-        tab2[index] = element * 2;
+        tab2[index] = element;
     }
-    console.log("tab double", tab2);
+    console.log("tab tab", tab2);
 };
 exports.decouverte_typescript_exe2 = decouverte_typescript_exe2;

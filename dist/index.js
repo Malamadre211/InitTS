@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const exe2_1 = require("./exe2");
-(0, exe2_1.decouverte_typescript_exe2)();
+const exe3_1 = require("./exe3");
+(0, exe3_1.decouverte_typescript_exe3)();
 // decouverte_typescript_exe1();
-// decouverte_typescript_exe3();
+// decouverte_typescript_exe2();
