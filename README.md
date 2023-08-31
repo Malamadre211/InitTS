@@ -1,9 +1,28 @@
-# Projet initial pour vos exercices d'algorithmie en typescript
+# **L'opérateur conditionnel (ternary operator)**
 
-## Installation
+Formule : **condition ? valeur_si_true : valeur_si_false ;**
 
-1. Clonez le projet
-2. Déplacez vous dans le dossier cloné
-3. installez les dépendances avec la commande `npm install` 
-4. Lancez le projet avec la commande `npm run dev`
-5. Modifiez le fichier `src/index.ts` pour commencer à coder
+```JS 
+// Condition traditionnelle JavaScript :
+if (something) {
+  console.log('Yes')
+} else {
+  console.log('No')
+}
+
+// Condition ternaire JavaScript :
+something ? console.log('Yes') : console.log('No')
+// [condition] ? [if] : [else] 
+``` 
+
+## condition
+Une expression qui est évaluée en un booléen (true ou false).
+
+## exprSiVrai
+Une expression qui est évaluée si la condition est équivalente à true (truthy)
+
+## exprSiFaux
+Une expression qui est évaluée si la condition est équivalente à false (falsy).
+
+**SI condition vaut true, l'opérateur renverra la valeur d'exprSiVrai; dans le cas contraire, il renverra la valeur de exprSiFaux.**
+
